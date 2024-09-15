@@ -1,0 +1,165 @@
+.container {
+    background-image: url("../ui_images/image.svg");
+    text-align: center;
+    padding: 20px;
+    width: 159.8vh;   
+    height: 97.3vh; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.navigationButtons {
+    display: flex;
+    gap: 500px; /* Space between the links */
+    justify-content: center; /* Center the links horizontally */
+    position: absolute;
+    top: 10px; /* Adjust the vertical positioning as needed */
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 30px;
+}
+
+.navLink:hover {
+    color: #FF5082; /* Change color on hover */
+}
+
+.inlineContainer {
+    display: flex;
+    gap: 18vw; /* Adjust gap to space out the sections */
+}
+
+.inlineContainer2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: flex-start; /* Align content to the left */
+}
+
+.infoHeader {
+    display: flex;
+    align-items: center; /* Icon and text on the same line */
+    gap: 1vw; /* Space between icon and text */
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5vw; /* Align details with the title */
+    gap: 0.5vw; /* Spacing between fields */
+    position: relative;
+    left: -2.3vw;
+}
+
+.detailItem {
+    display: flex;
+    align-items: center; /* Keep the icons and text aligned */
+    gap: 1vw;
+}
+
+.icon {
+    position: relative;
+    left: 5vw;  /* Move the icon slightly forward without affecting the text */
+}
+.icon2 {
+    position: relative;
+    left: 0vw;  /* Move the icon slightly forward without affecting the text */
+}
+.docicon {
+    position: relative;
+    left: -2vw;  /* Move the icon slightly forward without affecting the text */
+}
+.linecheck {
+    position: relative;
+    left: -3vw;
+    height: 4.5vh;
+}
+
+.questitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5vh;
+    font-weight: 450;
+    line-height: 45px;
+    height: 45px;
+    color: #FFFADE;
+    position: relative;
+    left: -26.3vw;
+}
+
+.label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vh;
+    color: #FFFADE;
+    text-align: left; 
+    position: relative;
+    left: -3vw;
+}
+
+.infoText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vh;
+    color: #FFFADE;
+    text-align: left;
+    position: relative;
+    left: 5vw;
+}
+.infoText2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vh;
+    color: #FFFADE;
+    text-align: left;
+    position: relative;
+    /* left: 2vw; */
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vh;
+    font-weight: 450;
+    line-height: 45px;
+    height: 45px;
+    color: #FFFADE;
+}
+
+.title2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.2vh;
+    font-weight: 450;
+    line-height: 45px;
+    color: #FFFADE;
+    position: relative;
+    left: -3vw;
+}
+
+.docsContainer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.uploadLink {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vh;
+    color: #FFFADE;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 7vh;
+    position: relative;
+    left: 1.7vw;
+}
+
+.uploadLink:hover {
+    color: #FF5082; /* Change color on hover */
+}

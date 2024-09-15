@@ -1,0 +1,22 @@
+.infoBox {
+    background-color: white;
+    color: #5E42BB;
+    padding: 10px 10px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    height: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 60%;
+}
+
+.infoBox::placeholder {
+    color: #5E42BB; /* Placeholder text color */
+    font-size: 20px; /* Placeholder text size */
+    opacity: 0.6; /* Ensure placeholder is not faded */
+}

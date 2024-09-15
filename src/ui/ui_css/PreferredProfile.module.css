@@ -1,0 +1,89 @@
+.container {
+    background-image: url("../ui_images/image.svg");
+    text-align: center;
+    padding: 20px;
+    width: 159.8vh;   
+    height: 58.3vh; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.navigationButtons {
+    display: flex;
+    gap: 500px; /* Space between the links */
+    justify-content: center; /* Center the links horizontally */
+    position: absolute;
+    top: 10px; /* Adjust the vertical positioning as needed */
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 30px;
+}
+
+.navLink:hover {
+    color: #FF5082; /* Change color on hover */
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 550;
+    line-height: 45px;
+    text-align: center;
+    width: 679px;
+    height: 45px;
+    color: #FFFADE;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    /* margin-left: 50px; */
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 20px; /* Space between the ButtonIcon components */
+    justify-content: center;
+    margin-bottom: 40px; /* Increased margin to add space below ButtonIcon */
+    /* margin-left: 55px; */
+}
+
+
+
+.curveButtonContainerA {
+    display: flex;
+    gap: 20px; /* Increased gap for CurveButtonIcon components */
+    justify-content: center;
+    margin-top: 10px; /* Space between ButtonIcon and CurveButtonIcon */
+    
+}
+.curveButtonContainerB {
+    display: flex;
+    gap: 20px; /* Increased gap for CurveButtonIcon components */
+    justify-content: center;
+    margin-top: 20px; /* Space between ButtonIcon and CurveButtonIcon */
+}
+
+.curveButtonContainerC {
+    display: flex;
+    gap: 20px; /* Increased gap for CurveButtonIcon components */
+    justify-content: center;
+    margin-top: 10px; /* Space between ButtonIcon and CurveButtonIcon */
+}
+.curveButtonContainerD {
+    display: flex;
+    gap: 20px; /* Increased gap for CurveButtonIcon components */
+    justify-content: center;
+    margin-top: 20px; /* Space between ButtonIcon and CurveButtonIcon */
+}
+

@@ -1,0 +1,101 @@
+/* ApplyForInternship.module.css */
+
+.container {
+    background-image: url("../ui_images/image.svg");
+    text-align: center;
+    padding: 20px;
+    width: 159.8vh;
+    height: 46.3vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.svgWrapper {
+    width: 100%; /* Adjust width as needed */
+    max-width: 600px; /* Adjust max-width to fit your design */
+}
+
+.customSVG {    
+    width: 100%; /* Scale SVG to fit container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 30px
+}
+
+.navigationButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+    margin-left: 600px;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+.navLink:hover {
+    color: #FF5082;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 45px;
+    text-align: center;
+    width: 679px;
+    height: 45px;
+    color: #FFFADE;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+
+.title2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 35px;
+    color: #FFFADE;
+    margin-bottom: 25px; /* Reduced gap */
+}
+
+.dragDropArea {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 5px;  /* Reduced padding */
+    text-align: center;
+    font-weight: -100;
+    margin-top: 5px;  /* Reduced margin */
+    margin-bottom: 45px;
+}
+
+.divider {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 5px 0;  /* Reduced margin */
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.previouslink {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; 
+    margin-left: 30px;
+    margin-bottom: 20px;
+}

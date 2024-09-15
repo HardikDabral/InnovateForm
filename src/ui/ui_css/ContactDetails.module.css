@@ -1,0 +1,100 @@
+/* ContactDetails.module.css */
+.container {
+    background-image: url(/_next/static/media/image.b7bdbb5c.svg);
+    /* text-align: center; */
+    padding: 20px;
+    width: 159.8vh;
+    height: 57.3vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .navigationButtons {
+    display: flex;
+    gap: 500px; /* Space between the links */
+    justify-content: center; /* Center the links horizontally */
+    position: absolute;
+    top: 10px; /* Adjust the vertical positioning as needed */
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 30px;
+  }
+  
+  .navLink:hover {
+    color: #FF5082; /* Change color on hover */
+  }
+  
+  .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 450;
+    line-height: 45px;
+    text-align: center;
+    width: 679px;
+    height: 45px;
+    color: #FFFADE;
+    margin-bottom: 0px;
+    margin-top: -5vh;
+    padding: 4vh;
+  }
+  
+  .title2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 45px;
+    width: 50%;
+    height: 45px;
+    color: #FFFADE;
+    margin-bottom: 2vhpx;
+    margin-top: 0px;
+    text-align: start;
+  }
+
+  .title3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 45px;
+    /* text-align: center; */
+    width: 50%;
+    height: 45px;
+    color: #FFFADE;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .contactDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.contactItem h3 {
+    margin-right: -200px; /* Reduce the margin to 5px */
+}
+  

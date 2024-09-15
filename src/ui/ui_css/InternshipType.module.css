@@ -1,0 +1,36 @@
+.container {
+    background-image: url("../ui_images/image.svg");
+    text-align: center;
+    padding: 20px;
+    width: 159.8vh;   
+    height: 40.3vh; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;  /* Stack children vertically */
+    align-items: center;  /* Center children horizontally */
+    justify-content: center;  /* Center children vertically */
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 550;
+    line-height: 45px;
+    text-align: center;
+    width: 679px;
+    height: 45px;
+    color: #FFFADE;
+    margin-bottom: 30px;  /* Space between title and buttons */
+    margin-top: 10px;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+
+
+

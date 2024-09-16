@@ -63,7 +63,7 @@
     margin-top: 0px;
     text-align: start;
     position: relative;
-    left: 4vh;
+    left: 16vh;
     top: 1.9vh;
   }
 
@@ -78,7 +78,7 @@
     margin-bottom: 0px;
     margin-top: 0px;
     position: relative;
-    left: 4vh;
+    left: 15vh;
     top: 0.5vh;
     padding-right: 2vh;
   }
@@ -100,16 +100,13 @@
     justify-content: center;
 }
 
-.contactItem h3 {
-    margin-right: -200px; /* Reduce the margin to 5px */
-}
   
 .MailSvg{
   position: relative;
-  left: 6vh;
+  left: 8vh;
 }
 
 .PhoneSvg{
   position: relative;
-  left: 6vh;
+  left: 8vh;
 }

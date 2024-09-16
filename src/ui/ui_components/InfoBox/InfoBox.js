@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import styles from './InfoBox.module.css'; // Adjust the path as needed
 
-const InfoBox = ({ value, onChange, placeholder }) => {
+const InfoBox = ({ value, onChange, placeholder, icon: Icon }) => {
     const [isFocused, setIsFocused] = useState(false);
 
     const handleFocus = () => {
@@ -14,14 +14,18 @@ const InfoBox = ({ value, onChange, placeholder }) => {
     };
 
     return (
-        <input 
-            className={styles.infoBox} 
-            value={value}
-            onChange={onChange}
-            placeholder={isFocused ? '' : placeholder} 
-            onFocus={handleFocus}
-            onBlur={handleBlur}
-        />
+        <div>
+            {Icon && <Icon className={styles.icon} />}
+            <input
+                className={styles.infoBox}
+                value={value}
+                onChange={onChange}
+                placeholder={isFocused ? '' : placeholder}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+            />
+        </div>
+
     );
 };
 

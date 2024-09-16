@@ -1,21 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from "../ui/ui_css/PreferredProfile.module.css"; 
 import ButtonIcon from '../ui/ui_components/Button/button';
 import CurveButtonIcon from '@/ui/ui_components/CurveButton/curveButton';
 
 const PreferredProfile = ({ selectedInternshipType, onProfileSelect, onPreviousClick, onNextClick }) => {
     const [selectedProfile, setSelectedProfile] = useState(null);
+    const [internshipType, setInternshipType] = useState(selectedInternshipType); // Local state for internship type
+
+    useEffect(() => {
+        setInternshipType(selectedInternshipType); // Sync with parent selection initially
+    }, [selectedInternshipType]);
+
+    const handleInternshipTypeClick = (type) => {
+        setInternshipType(type); // Update local state
+        onProfileSelect(type);   // Notify parent about the selection change
+        setSelectedProfile(null); // Reset the profile when changing internship type
+    };
 
     const handleProfileClick = (profile) => {
         setSelectedProfile(profile);
-        onProfileSelect(profile); // Notify the parent component about the selected profile
+        onProfileSelect(profile); // Notify parent about the selected profile
     };
 
     return (
         <div className={styles.container}>
             <div className={styles.navigationButtons}>
-                <a href="#" className={styles.navLink} onClick={onPreviousClick}>Previous</a>
-                <a href="#" className={styles.navLink} onClick={onNextClick}>Next</a>
+                <a href="#" className={styles.navLink} onClick={onPreviousClick}>{'< Previous'}</a>
+                <a href="#" className={styles.navLink} onClick={onNextClick}>{'Next >'}</a>
             </div>
 
             <h1 className={styles.title}>Select your preferred profile</h1>
@@ -23,17 +34,17 @@ const PreferredProfile = ({ selectedInternshipType, onProfileSelect, onPreviousC
             <div className={styles.buttonContainer}>
                 <ButtonIcon 
                     text="IT" 
-                    onClick={() => handleProfileClick("IT")} 
-                    isSelected={selectedInternshipType === "IT"} // Highlight if IT is selected
+                    onClick={() => handleInternshipTypeClick("IT")} 
+                    isSelected={internshipType === "IT"} // Highlight if IT is selected
                 />
                 <ButtonIcon 
                     text="Non - IT" 
-                    onClick={() => handleProfileClick("Non-IT")} 
-                    isSelected={selectedInternshipType === "Non-IT"} // Highlight if Non-IT is selected
+                    onClick={() => handleInternshipTypeClick("Non-IT")} 
+                    isSelected={internshipType === "Non-IT"} // Highlight if Non-IT is selected
                 />
             </div>
 
-            {selectedInternshipType === "IT" ? (
+            {internshipType === "IT" ? (
                 <div>
                     <div className={styles.curveButtonContainerA}>
                         <CurveButtonIcon 
@@ -48,8 +59,8 @@ const PreferredProfile = ({ selectedInternshipType, onProfileSelect, onPreviousC
                         />
                         <CurveButtonIcon 
                             text="Devops intern" 
-                            onClick={() => handleProfileClick("Devops")} 
-                            isSelected={selectedProfile === "Devops"}
+                            onClick={() => handleProfileClick("development operations")} 
+                            isSelected={selectedProfile === "development operations"}
                         />
                     </div>
                     <div className={styles.curveButtonContainerB}>
@@ -65,8 +76,8 @@ const PreferredProfile = ({ selectedInternshipType, onProfileSelect, onPreviousC
                     <div className={styles.curveButtonContainerC}>
                         <CurveButtonIcon 
                             text="Human Resource Management Intern" 
-                            onClick={() => handleProfileClick("HR Management")} 
-                            isSelected={selectedProfile === "HR Management"}
+                            onClick={() => handleProfileClick("Human Resource Management")} 
+                            isSelected={selectedProfile === "Human Resource Management"}
                         />
                         <CurveButtonIcon 
                             text="Social Media Management Intern" 

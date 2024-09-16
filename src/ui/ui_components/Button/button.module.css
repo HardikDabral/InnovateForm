@@ -4,7 +4,7 @@
   padding: 10px 50px; 
   border-radius: 10px; 
   font-family: 'Poppins', sans-serif; 
-  font-size: 20px; 
+  font-size: 2.5vh; 
   font-weight: 700; 
   border: 2px solid #5E42BB; 
   cursor: pointer; 
@@ -12,8 +12,8 @@
   align-items: center; 
   justify-content: center; 
   transition: background-color 0.3s ease, color 0.3s ease; 
-  min-width: 155px; 
-  min-height: 55px; 
+  min-width: 19.375vh; 
+  min-height: 7.5vh; 
   text-align: center; 
 }
 

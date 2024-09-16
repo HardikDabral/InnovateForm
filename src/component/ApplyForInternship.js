@@ -17,7 +17,7 @@ const ApplyForInternship = ({ selectedProfile, onResetFlow, onNextClick }) => {
     return (
         <div className={styles.container}>
             <div className={styles.navigationButtons}>
-                <a href="#" className={styles.navLink} onClick={handleNextClick}>Next</a>
+                <a href="#" className={styles.navLink} onClick={handleNextClick}>{'Next >'}</a>
             </div>
             <h1 className={styles.title}>Apply For {selectedProfile} Internship</h1>
             <h3 className={styles.title2}>Kindly upload the updated version of your resume in PDF format</h3>

@@ -3,7 +3,7 @@
     text-align: center;
     padding: 20px;
     width: 159.8vh;   
-    height: 97.3vh; 
+    height: 107.3vh; 
     background-size: cover;
     background-position: center;
     border-radius: 30px;
@@ -13,7 +13,32 @@
     justify-content: center;
     position: relative;
 }
-
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align items to the bottom */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Full viewport height or adjust as needed */
+  }
+  
+  .ReviewButton3 {
+    background-color: white; 
+    color: #5E42BB;
+    padding: 10px 40px; 
+    border-radius: 10px; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 20px; 
+    font-weight: 700;       
+    border: 2px solid #5E42BB; 
+    cursor: pointer; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    text-align: center; 
+    margin-bottom: 9.4vh; /* Adjust spacing from bottom */
+  }
+  
 .navigationButtons {
     display: flex;
     gap: 500px; /* Space between the links */
@@ -26,10 +51,12 @@
     color: white;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 2.2vh;
     cursor: pointer;
     transition: color 0.3s ease;
     margin-top: 30px;
+    position: relative;
+    right: 30vh;
 }
 
 .navLink:hover {
@@ -163,3 +190,78 @@
 .uploadLink:hover {
     color: #FF5082; /* Change color on hover */
 }
+
+.blurBox {
+    background-color: rgba(139, 14, 14, 0.1); 
+    backdrop-filter: blur(10px); 
+    border-radius: 1vh; 
+    padding: 3vh; 
+    width: 120vh; 
+    max-width: 120vh; 
+    height: 0.0001vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    margin-bottom: 1.5vh;
+}
+
+.questionRow {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Space out text and button */
+}
+
+.questionText {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 2.2vh;
+    margin-right: 2vh; /* Add space between the text and button */
+    flex: 1; /* Allow text to take up more space */
+    text-align: left; /* Align text to the left */
+    position: relative;
+    bottom: 2.9vh;
+}
+.linecheck2 {
+    position: relative;
+    bottom: 2.9vh;
+    height: 2vw;
+}
+
+.actionContainer {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between the link and button */
+    margin-top: 20px; /* Space above the container */
+}
+
+.clearLink {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2vh;
+    color: white; /* Link color */
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    position: relative;
+    top: 1.5vh;
+}
+
+.clearLink:hover {
+    color: #FF6D95; /* Change color on hover */
+}
+
+.uploadButton {
+    background-color: #FE802C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2vh;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 15vw;
+}
+
+.uploadButton:hover {
+    background-color:  #FE802C;
+}
+

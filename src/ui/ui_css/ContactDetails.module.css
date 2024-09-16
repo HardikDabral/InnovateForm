@@ -27,7 +27,7 @@
     color: white;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 2.2vh;
     cursor: pointer;
     transition: color 0.3s ease;
     margin-top: 30px;
@@ -39,21 +39,21 @@
   
   .title {
     font-family: 'Poppins', sans-serif;
-    font-size: 28px;
+    font-size: 3.5vh;
     font-weight: 450;
     line-height: 45px;
     text-align: center;
-    width: 679px;
     height: 45px;
     color: #FFFADE;
     margin-bottom: 0px;
     margin-top: -5vh;
     padding: 4vh;
+    max-width: 100%;
   }
   
   .title2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 2.8vh;
     font-weight: 450;
     line-height: 45px;
     width: 50%;
@@ -62,19 +62,25 @@
     margin-bottom: 2vhpx;
     margin-top: 0px;
     text-align: start;
+    position: relative;
+    left: 4vh;
+    top: 1.9vh;
   }
 
   .title3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 2.5vh;
     font-weight: 450;
     line-height: 45px;
-    /* text-align: center; */
     width: 50%;
     height: 45px;
     color: #FFFADE;
     margin-bottom: 0px;
     margin-top: 0px;
+    position: relative;
+    left: 4vh;
+    top: 0.5vh;
+    padding-right: 2vh;
   }
 
   .contactDetails {
@@ -98,3 +104,12 @@
     margin-right: -200px; /* Reduce the margin to 5px */
 }
   
+.MailSvg{
+  position: relative;
+  left: 6vh;
+}
+
+.PhoneSvg{
+  position: relative;
+  left: 6vh;
+}

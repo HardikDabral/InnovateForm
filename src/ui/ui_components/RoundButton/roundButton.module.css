@@ -4,7 +4,7 @@
     padding: 0; /* Reset padding */
     border-radius: 50%; /* Ensure it's fully round */
     font-family: 'Poppins', sans-serif; 
-    font-size: 20px; 
+    font-size: 2.7vh; 
     font-weight: 700; 
     border: 2px solid #5E42BB; 
     cursor: pointer; 

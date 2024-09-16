@@ -26,7 +26,7 @@
     color: white;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 2vh;
     cursor: pointer;
     transition: color 0.3s ease;
     margin-top: 30px;
@@ -38,21 +38,19 @@
 
 .title {
     font-family: 'Poppins', sans-serif;
-    font-size: 28px;
+    font-size: 3.7vh;
     font-weight: 450;
     line-height: 45px;
     text-align: center;
-    width: 679px;
     height: 45px;
     color: #FFFADE;
     margin-bottom: 0px;
     margin-top: 60px;
-    /* margin-left: 50px; */
 }
 
 .title2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 2.5vh;
     font-weight: 100;
     line-height: 35px;
     color: #FFFADE;
@@ -63,11 +61,10 @@
     display: flex;
     gap: 20px; /* Space between the ButtonIcon components */
     justify-content: center;
-    margin-bottom: 40px; /* Increased margin to add space below ButtonIcon */
-    /* margin-left: 55px; */
+    margin-bottom: 40px; 
 }
 
 .selectedButton {
-    background-color: #FF5082; /* Change button color to #FF5082 when selected */
-    color: white; /* Ensure text color is readable */
+    background-color: #FF5082; 
+    color: white; 
 }

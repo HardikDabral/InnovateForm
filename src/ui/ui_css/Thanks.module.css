@@ -3,7 +3,7 @@
     text-align: center;
     padding: 20px;
     width: 159.8vh;   
-    height: 40.3vh; 
+    height: 36.3vh; 
     background-size: cover;
     background-position: center;
     border-radius: 30px;
@@ -13,23 +13,27 @@
     justify-content: center;  /* Center children vertically */
 }
 
-.title {
+.thanksTitle {
     font-family: 'Poppins', sans-serif;
-    font-size: 3.125vh;
+    font-size: 50px;
     font-weight: 550;
     line-height: 45px;
     text-align: center;
+    width: 679px;
     height: 45px;
     color: #FFFADE;
-    margin-bottom: 3.75vh;  /* Space between title and buttons */
-    margin-top: 1.25vh;
+    margin-bottom: 30px;  /* Space between title and buttons */
+    margin-top: 10px;
 }
-
-.buttonContainer {
-    display: flex;
-    gap: 20px; /* Space between buttons */
+.thanksMessage {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 550;
+    line-height: 45px;
+    text-align: center;
+    width: 679px;
+    height: 45px;
+    color:#FE802C;
+    margin-bottom: 30px;  /* Space between title and buttons */
+    margin-top: -10px;
 }
-
-
-
-

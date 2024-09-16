@@ -9,6 +9,7 @@ import Unpaid from '@/component/Unpaid';
 import Immediately from '@/component/Immediately';
 import ContactDetails from '@/component/ContactDetails';
 import ReviewApplication from '@/component/ReviewApplication';
+import Thanks from '@/component/Thanks';
 import styles from '../ui/ui_css/UI.module.css';
 
 export default function UI() {
@@ -22,6 +23,8 @@ export default function UI() {
   const [showImmediately, setShowImmediately] = useState(false);
   const [showContactDetails, setShowContactDetails] = useState(false);
   const [showReviewApplication, setShowReviewApplication] = useState(false);
+  const [showThanks, setShowThanks] = useState(false); // State for Thanks component
+
 
   const [selectedOptionCollegeStatus, setSelectedOptionCollegeStatus] = useState(null);
   const [selectedOptionFigmaProficiency, setSelectedOptionFigmaProficiency] = useState(null);
@@ -29,8 +32,8 @@ export default function UI() {
   const [selectedUnpaidOption, setSelectedUnpaidOption] = useState(null);
   const [selectedImmediatelyOption, setSelectedImmediatelyOption] = useState(null);
 
-  const [contactEmail, setContactEmail] = useState(''); // State for email
-  const [contactMobile, setContactMobile] = useState(''); // State for mobile number
+  const [contactEmail, setContactEmail] = useState('');
+  const [contactMobile, setContactMobile] = useState('');
 
   const [selectedInternshipType, setSelectedInternshipType] = useState(null);
   const [selectedProfile, setSelectedProfile] = useState(null);
@@ -104,6 +107,7 @@ export default function UI() {
     }
   };
 
+
   const handleNextClick = () => {
     if (showPreferredProfile) {
       setShowPreferredProfile(false);
@@ -125,11 +129,17 @@ export default function UI() {
       setShowImmediately(true);
     } else if (showImmediately) {
       setShowImmediately(false);
-      setShowContactDetails(true);
+      setShowContactDetails(true); // Transition to ContactDetails
     } else if (showContactDetails) {
       setShowContactDetails(false);
       setShowReviewApplication(true); // Transition to ReviewApplication
     }
+  };
+
+
+  const handleSubmit = () => {
+    setShowReviewApplication(false);
+    setShowThanks(true); // Show Thanks component
   };
 
   const handleResetFlow = () => {
@@ -152,7 +162,49 @@ export default function UI() {
     setShowImmediately(false);
     setShowContactDetails(false);
     setShowReviewApplication(false);
+    setShowThanks(false); // Hide Thanks component
   };
+
+  const handleClearClick = () => {
+    setShowReviewApplication(false);
+    setShowPreferredProfile(true); // Show the PreferredProfile page when Clear is clicked
+  };
+
+  const handleCollegeStatusClick = () => {
+    setShowReviewApplication(false);
+    setShowCollegeStatus(true); // Show CollegeStatus page when clicked
+  };
+
+  const handleContactDetailsClick = () => {
+    setShowReviewApplication(false);
+    setShowContactDetails(true); // Show ContactDetails when CheckIcon is clicked
+  };
+
+  const handleResumeClick = () => {
+    setShowReviewApplication(false);
+    setShowApplyForInternship(true); // Show ApplyForInternship when the resume check icon is clicked
+  };
+
+  const handleFigmaProficiencyClick = () => {
+    setShowReviewApplication(false);
+    setShowSelectFigmaProficiency(true); // Show Figma proficiency component
+  };
+
+  const handleTypeProficiencyClick = () => {
+    setShowReviewApplication(false);
+    setShowSelectTypeProficiency(true); // Show Type proficiency component
+  };
+
+  const handleUnpaidClick = () => {
+    setShowReviewApplication(false);
+    setShowUnpaid(true); // Show Unpaid component
+  };
+
+  const handleImmediatelyClick = () => {
+    setShowReviewApplication(false);
+    setShowImmediately(true); // Show Immediately component
+  };
+
 
   return (
     <div className={styles.centerContainer}>
@@ -238,7 +290,26 @@ export default function UI() {
         <ReviewApplication
           selectedProfile={selectedProfile}
           onPreviousClick={handlePreviousClick}
+          handleSubmit={handleSubmit}
+          contactEmail={contactEmail}
+          contactMobile={contactMobile}
+          unpaidOption={selectedUnpaidOption}
+          immediatelyOption={selectedImmediatelyOption}
+          figmaProficiency={selectedOptionFigmaProficiency}
+          typeProficiency={selectedOptionTypeProficiency}
+          collegeStatus={selectedOptionCollegeStatus}
+          onContactDetailsClick={handleContactDetailsClick}
+          onResumeClick={handleResumeClick}
+          onCollegeStatusClick={handleCollegeStatusClick}
+          onFigmaProficiencyClick={handleFigmaProficiencyClick}
+          onTypeProficiencyClick={handleTypeProficiencyClick}
+          onUnpaidClick={handleUnpaidClick}
+          onImmediatelyClick={handleImmediatelyClick}
+          onClearClick={handleClearClick} // Add this line to pass the handler
         />
+      )}
+      {showThanks && (
+        <Thanks />
       )}
     </div>
   );

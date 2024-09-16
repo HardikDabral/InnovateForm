@@ -15,8 +15,8 @@ const SelectTypeProficiency = ({ selectedProfile, selectedOption, onOptionChange
     return (
         <div className={styles.container}>
             <div className={styles.navigationButtons}>
-                <a href="#" className={styles.navLink} onClick={onPreviousClick}>Previous</a>
-                <a href="#" className={styles.navLink} onClick={onNextClick}>Next</a>
+                <a href="#" className={styles.navLink} onClick={onPreviousClick}>{'< Previous'}</a>
+                <a href="#" className={styles.navLink} onClick={onNextClick}>{'Next >'}</a>
             </div>
 
             <h1 className={styles.title}>Apply for {selectedProfile} internship</h1>

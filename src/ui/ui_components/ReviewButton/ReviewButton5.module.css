@@ -13,9 +13,9 @@
     justify-content: center; 
     transition: background-color 0.3s ease, color 0.3s ease; 
     width: 2vh; 
-    height: 2.3vw; 
+    height: 2.4vw; 
     text-align: center; 
     position: relative;
-    bottom: 3.4vh;
-    right: 9vw;
+    bottom: 3vh;
+    right: 10vw;
   }

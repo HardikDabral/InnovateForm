@@ -3,8 +3,7 @@
     text-align: center;
     padding: 20px;
     width: 159.8vh;   
-    height: 107.3vh; 
-    background-size: cover;
+    height: 117.3vh;
     background-position: center;
     border-radius: 30px;
     display: flex;
@@ -16,9 +15,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Align items to the bottom */
-    align-items: center; /* Center items horizontally */
-    height: 100vh; /* Full viewport height or adjust as needed */
+    justify-content: flex-end; 
+    align-items: center; 
+    height: 100vh; 
   }
   
   .ReviewButton3 {
@@ -153,11 +152,13 @@
 
 .title {
     font-family: 'Poppins', sans-serif;
-    font-size: 4vh;
+    font-size: 3.7vh;
     font-weight: 450;
     line-height: 45px;
     height: 45px;
     color: #FFFADE;
+    position: relative;
+    top: 1vh;
 }
 
 .title2 {
@@ -196,8 +197,7 @@
     backdrop-filter: blur(10px); 
     border-radius: 1vh; 
     padding: 3vh; 
-    width: 120vh; 
-    max-width: 120vh; 
+    width: 125vh; 
     height: 0.0001vh;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
     border: 1px solid rgba(255, 255, 255, 0.3); 
@@ -213,7 +213,7 @@
 .questionText {
     font-family: 'Poppins', sans-serif;
     color: white;
-    font-size: 2.2vh;
+    font-size: 2vh;
     margin-right: 2vh; /* Add space between the text and button */
     flex: 1; /* Allow text to take up more space */
     text-align: left; /* Align text to the left */

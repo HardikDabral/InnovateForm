@@ -16,7 +16,7 @@
 
 .infoBox::placeholder {
     color: #5E42BB; /* Placeholder text color */
-    font-size: 22px; /* Placeholder text size */
+    font-size: 2.5vh; /* Placeholder text size */
     opacity: 0.6; /* Ensure placeholder is not faded */
 }
 .infoBoxContainer {

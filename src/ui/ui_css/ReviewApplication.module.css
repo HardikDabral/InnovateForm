@@ -101,7 +101,7 @@
 }
 .icon2 {
     position: relative;
-    left: 0vw;  /* Move the icon slightly forward without affecting the text */
+    left: -0.5vw;  /* Move the icon slightly forward without affecting the text */
 }
 .docicon {
     position: relative;
@@ -183,7 +183,6 @@
     text-decoration: none;
     cursor: pointer;
     transition: color 0.3s ease;
-    margin-top: 7vh;
     position: relative;
     left: 1.7vw;
 }
@@ -265,3 +264,15 @@
     background-color:  #FE802C;
 }
 
+.docsContainer {
+    align-items: center;
+    justify-content: center;
+    width: 40vh; /* Adjust width to make the square */
+    height: 16vh; /* Same as width to form a square */
+    border: 1px solid white; /* Black border for the square */
+    border-radius: 8px; /* Optional: Round the corners */
+    padding: 10px;
+    margin-top: 80px;
+    position: absolute;
+    right: 19vh;
+  }

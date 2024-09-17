@@ -11,19 +11,19 @@ import ReviewButton3 from '@/ui/ui_components/ReviewButton/ReviewButton3';
 import ReviewButton4 from '@/ui/ui_components/ReviewButton/ReviewButton4';
 import ReviewButton5 from '@/ui/ui_components/ReviewButton/ReviewButton5';
 
-const ReviewApplication = ({ 
-  selectedProfile, 
-  onPreviousClick, 
-  handleSubmit, 
-  contactEmail, 
-  contactMobile, 
+const ReviewApplication = ({
+  selectedProfile,
+  onPreviousClick,
+  handleSubmit,
+  contactEmail,
+  contactMobile,
   unpaidOption,
-  immediatelyOption, 
-  figmaProficiency, 
-  typeProficiency, 
-  collegeStatus, 
-  onContactDetailsClick, // New prop to handle CheckIcon click
-  onResumeClick, // New prop to handle the resume click
+  immediatelyOption,
+  figmaProficiency,
+  typeProficiency,
+  collegeStatus,
+  onContactDetailsClick,
+  onResumeClick,
   onCollegeStatusClick,
   onFigmaProficiencyClick,
   onTypeProficiencyClick,
@@ -55,7 +55,7 @@ const ReviewApplication = ({
             <div className={styles.detailItem}>
               <h1 className={styles.label}>Mobile Number:</h1>
               <Image className={styles.icon2} src={PhoneIcon} alt='phoneIcon' />
-              <span className={styles.infoText2}>{contactMobile}</span>
+              <span className={styles.infoText2}>+91 {contactMobile}</span>
             </div>
           </div>
         </div>
@@ -67,25 +67,27 @@ const ReviewApplication = ({
               <Image className={styles.linecheck} src={CheckIcon} alt='checkIcon' />
             </a>
           </div>
+
           <div className={styles.docsContainer}>
             <Image className={styles.docicon} src={DocsIcon} alt='DocsIcon' />
             <a href="#" className={styles.uploadLink}>Upload</a>
           </div>
+
         </div>
       </div>
 
       <h1 className={styles.questitle}>Questions</h1>
       <div className={styles.blurBox}>
-      <div className={styles.questionRow}>
-        <p className={styles.questionText}>Are you a college student?</p>
-        <ReviewButton className={styles.ReviewButton} text={collegeStatus} />
-        <a href="#" className={styles.checkIconLink} onClick={onCollegeStatusClick}>
-          <Image className={styles.linecheck2} src={CheckIcon} alt='checkIcon' />
-        </a>
+        <div className={styles.questionRow}>
+          <p className={styles.questionText}>Are you a college student?</p>
+          <ReviewButton className={styles.ReviewButton} text={collegeStatus} />
+          <a href="#" className={styles.checkIconLink} onClick={onCollegeStatusClick}>
+            <Image className={styles.linecheck2} src={CheckIcon} alt='checkIcon' />
+          </a>
+        </div>
       </div>
-      </div>
- {/* Figma Proficiency Section */}
- <div className={styles.blurBox}>
+      {/* Figma Proficiency Section */}
+      <div className={styles.blurBox}>
         <div className={styles.questionRow}>
           <p className={styles.questionText}>Rate your proficiency in figma on a scale of 1 to 10.</p>
           <ReviewButton2 className={styles.ReviewButton} text={figmaProficiency} />
@@ -129,7 +131,7 @@ const ReviewApplication = ({
       </div>
 
       <div className={styles.actionContainer}>
-      <a href="#" className={styles.clearLink} onClick={onClearClick}>Clear</a>
+        <a href="#" className={styles.clearLink} onClick={onClearClick}>Clear</a>
         <button className={styles.uploadButton} onClick={handleSubmit}>Submit</button>
       </div>
     </div>

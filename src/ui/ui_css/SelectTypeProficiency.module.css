@@ -4,7 +4,7 @@
     padding: 20px;
     width: 159.8vh;   
     height: 49.3vh; 
-    background-size: cover;
+    /* background-size: cover; */
     background-position: center;
     border-radius: 30px;
     display: flex;

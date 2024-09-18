@@ -288,6 +288,7 @@ export default function UI() {
       )}
       {showReviewApplication && (
         <ReviewApplication
+          
           selectedProfile={selectedProfile}
           onPreviousClick={handlePreviousClick}
           handleSubmit={handleSubmit}
@@ -298,6 +299,8 @@ export default function UI() {
           figmaProficiency={selectedOptionFigmaProficiency}
           typeProficiency={selectedOptionTypeProficiency}
           collegeStatus={selectedOptionCollegeStatus}
+
+          //ye icon click handlers hai
           onContactDetailsClick={handleContactDetailsClick}
           onResumeClick={handleResumeClick}
           onCollegeStatusClick={handleCollegeStatusClick}

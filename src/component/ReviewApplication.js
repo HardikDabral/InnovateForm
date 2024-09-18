@@ -15,6 +15,7 @@ const ReviewApplication = ({
   selectedProfile,
   onPreviousClick,
   handleSubmit,
+  internshipType,
   contactEmail,
   contactMobile,
   unpaidOption,

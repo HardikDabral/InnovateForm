@@ -288,7 +288,7 @@ export default function UI() {
       )}
       {showReviewApplication && (
         <ReviewApplication
-          
+          internshipType={selectedInternshipType}
           selectedProfile={selectedProfile}
           onPreviousClick={handlePreviousClick}
           handleSubmit={handleSubmit}
